@@ -14,3 +14,11 @@ before(function(done){
     })
 })
 
+// Drop(delete) the char collection before each test
+beforeEach(function(done){
+    // Drop the collection
+    mongoose.connection.collections.mariochars.drop(function(){
+        done()
+    })
+})
+
