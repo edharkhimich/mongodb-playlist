@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lyfm/mongodb-playlist/issues"
   },
-  "homepage": "https://github.com/lyfm/mongodb-playlist#readme"
+  "homepage": "https://github.com/lyfm/mongodb-playlist#readme",
+  "dependencies": {
+    "mongoose": "^5.3.6"
+  }
 }
