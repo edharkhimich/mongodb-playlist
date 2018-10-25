@@ -16,6 +16,4 @@ describe('Saving records', function(){
             done()
         })
     })
-
-
 })
