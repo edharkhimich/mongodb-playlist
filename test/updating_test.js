@@ -30,12 +30,11 @@ describe('Updating records', function(){
 
 
     it('Increment the weight by 1', function(done){
-        MarioChar.update({}, {$inc: {weight: 1}}).then(function(){
-            MarioChar.findOne({name: 'Mario'}.then(function(record){
+        MarioChar.updateMany({}, {$inc: {weight: 1}}).then(function(){
+            MarioChar.findOne({name: 'Mario'}).then(function(record){
                 assert(record.weight === 51)
                 done()
-            }))
+            })
         })
     })
-
 })
